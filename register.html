@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - HomeFit</title>
+  <link rel="stylesheet" href="GYM.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css " />
+  <style>
+    body.dark {
+      background-color: #121212;
+      color: #eee;
+    }
+
+    .register-container {
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 30px 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    body.dark .register-container {
+      background-color: #1f1f1f;
+    }
+
+    .register-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--primary, rgb(253, 9, 50));
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: rgb(253, 9, 50);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .register-btn:hover {
+      background-color: rgb(253, 9, 50);
+    }
+
+    .toggle-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .toggle-link a {
+      color: rgb(253, 9, 50);
+      text-decoration: none;
+    }
+
+    .toggle-link a:hover {
+      text-decoration: underline;
+    }
+
+    #theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: black;
+    }
+    .toggle-link a {
+  color: rgb(253, 9, 50);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.toggle-link a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+
+  <div class="register-container">
+    <h2>Create Account</h2>
+    <form id="registerForm">
+      <div class="input-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name" required />
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password" required />
+      </div>
+      <div class="input-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter password" required />
+      </div>
+      <div class="input-group">
+        <label for="goal">Fitness Goal</label>
+        <select id="goal" required>
+          <option value="">Select your goal</option>
+          <option value="weight-loss">Weight Loss</option>
+          <option value="muscle-gain">Muscle Gain</option>
+          <option value="general-fitness">General Fitness</option>
+        </select>
+      </div>
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+    <div class="toggle-link">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Simple registration validation
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const fullName = document.getElementById("fullName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      const goal = document.getElementById("goal").value;
+
+      if (!fullName || !email || !password || !confirmPassword || !goal) {
+        alert("Please fill out all fields.");
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return;
+      }
+
+      // Simulate successful registration
+      alert("Registration successful! You can now log in.");
+      window.location.href = "login.html";
+    });
+
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById("theme-toggle");
+    let isDark = false; // Track the current theme state
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      const icon = themeToggle.querySelector("i");
+      icon.classList.toggle("fa-moon");
+      icon.classList.toggle("fa-sun");
+       isDark = !isDark;
+    themeToggle.style.color = isDark ? "white" : "black";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HomeFit Challenges</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-text button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #222;
+            text-align: center;
+        }
+
+        .categories, .challenges, .testimonials {
+            margin-top: 30px;
+        }
+
+        .categories ul, .challenges ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .categories li, .challenge-card {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+
+        .challenge-card h3 {
+            margin-bottom: 10px;
+            color: crimson;
+        }
+
+        .challenge-card button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .testimonials blockquote {
+            background: #f9f9f9;
+            border-left: 5px solid crimson;
+            margin: 1em 0;
+            padding: 1em;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 1.5rem;
+            }
+        }
+        .home-exercises .exercise {
+    background: #fefefe;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.home-exercises .exercise h3 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.home-exercises .exercise p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.home-exercises .exercise ol {
+    padding-left: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HomeFit Challenges</h1>
+    </header>
+
+    <div class="hero">
+        <video autoplay muted loop>
+            <source src="workout-video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-text">
+            <h1>Take the First Step<br>Transform Your Life</h1>
+            <p>Commit to our proven challenges and feel the change in just weeks.</p>
+            <button>Join a Challenge</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="categories">
+            <h2>Challenge Categories</h2>
+            <ul>
+                <li>💪 Strength & Muscle Gain</li>
+                <li>🏃 Endurance & Cardio</li>
+                <li>🧘 Mobility & Flexibility</li>
+                <li>🔥 Fat Burn</li>
+                <li>🥗 Nutrition & Lifestyle</li>
+            </ul>
+        </section>
+
+        <section class="challenges">
+            <h2>Current Challenges</h2>
+            <ul>
+                <li class="challenge-card">
+                    <h3>12-Week Strength Bootcamp</h3>
+                    <p>Push your limits with progressive strength training. Perfect for beginners and intermediates.</p>
+                    <p><strong>Level:</strong> Beginner</p>
+                    <p><strong>Duration:</strong> 12 Weeks</p>
+                    <button>Join Now</button>
+                </li>
+                <li class="challenge-card">
+                    <h3>30-Day Fat Burn Blast</h3>
+                    <p>High-intensity workouts to torch calories and sculpt lean muscle.</p>
+                    <p><strong>Level:</strong> Intermediate</p>
+                    <p><strong>Duration:</strong> 30 Days</p>
+                    <button>Join Now</button>
+                </li>
+                <li class="challenge-card">
+                    <h3>6-Week Mobility Mastery</h3>
+                    <p>Increase flexibility, relieve tension, and move pain-free with guided mobility flows.</p>
+                    <p><strong>Level:</strong> All Levels</p>
+                    <p><strong>Duration:</strong> 6 Weeks</p>
+                    <button>Join Now</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>Success Stories</h2>
+            <blockquote>
+                "After joining the 30-Day Fat Burn Challenge, I lost 6kg and feel more energetic than ever!" – Aarti S.
+            </blockquote>
+            <blockquote>
+                "The Mobility Mastery challenge helped fix my back pain and improve posture. Life-changing!" – Rahul P.
+            </blockquote>
+        </section>
+    </div>
+    <!-- Add this inside your <body> tag, below testimonials or wherever appropriate -->
+<section class="home-exercises">
+    <div class="container">
+        <h2>Home Exercises</h2>
+
+        <div class="exercise">
+            <h3>1. Push-ups</h3>
+            <p><strong>Benefits:</strong> Builds upper body strength (chest, shoulders, triceps), engages your core, improves posture.</p>
+            <ol>
+                <li>Start in a high plank position with hands slightly wider than shoulders.</li>
+                <li>Keep your body straight from head to heels.</li>
+                <li>Tighten core and glutes to stabilize posture.</li>
+                <li>Lower yourself until your chest is just above the floor.</li>
+                <li>Elbows should form a 45° angle from the torso.</li>
+                <li>Push back up and repeat.</li>
+                <li>Inhale down, exhale up.</li>
+                <li>Don't let hips sag or butt rise too high.</li>
+                <li>Repeat 10–15 reps.</li>
+                <li>Beginners can start on their knees.</li>
+            </ol>
+        </div>
+
+        <div class="exercise">
+            <h3>2. Squats</h3>
+            <p><strong>Benefits:</strong> Strengthens legs and glutes, improves mobility and posture, boosts balance.</p>
+            <ol>
+                <li>Stand with feet shoulder-width apart.</li>
+                <li>Keep your chest lifted and spine neutral.</li>
+                <li>Push your hips back and lower down as if sitting.</li>
+                <li>Go down until thighs are parallel to the ground.</li>
+                <li>Don't let knees cave inward.</li>
+                <li>Keep heels flat and weight distributed evenly.</li>
+                <li>Engage your core for balance.</li>
+                <li>Push through your heels to rise.</li>
+                <li>Exhale on the way up, inhale on the way down.</li>
+                <li>Do 2–3 sets of 12–15 reps.</li>
+            </ol>
+        </div>
+
+        <div class="exercise">
+            <h3>3. Plank</h3>
+            <p><strong>Benefits:</strong> Strengthens core, improves posture and stability, engages shoulders and glutes.</p>
+            <ol>
+                <li>Lie face down, then prop up on forearms and toes.</li>
+                <li>Elbows under shoulders; body in a straight line.</li>
+                <li>Engage your core—don’t let hips sag.</li>
+                <li>Squeeze glutes and hold position.</li>
+                <li>Keep neck neutral, gaze down.</li>
+                <li>Focus on steady breathing.</li>
+                <li>Hold for 20–60 seconds.</li>
+                <li>Avoid arching or rounding your back.</li>
+                <li>Add difficulty by lifting a leg.</li>
+                <li>Repeat for 2–3 rounds.</li>
+            </ol>
+        </div>
+
+        <div class="exercise">
+            <h3>4. Lunges</h3>
+            <p><strong>Benefits:</strong> Builds leg strength, improves balance, isolates each leg for symmetry.</p>
+            <ol>
+                <li>Stand tall with feet hip-width apart.</li>
+                <li>Step forward with one leg and lower both knees.</li>
+                <li>Back knee hovers just above ground.</li>
+                <li>Front thigh should be parallel to the floor.</li>
+                <li>Keep upper body upright and core tight.</li>
+                <li>Push through front heel to return.</li>
+                <li>Alternate legs and repeat.</li>
+                <li>Maintain steady breathing.</li>
+                <li>Keep knees in line with feet.</li>
+                <li>2–3 sets of 10–12 reps per leg.</li>
+            </ol>
+        </div>
+
+        <div class="exercise">
+            <h3>5. Glute Bridges</h3>
+            <p><strong>Benefits:</strong> Activates glutes, strengthens lower back, improves hip mobility and posture.</p>
+            <ol>
+                <li>Lie on your back with knees bent, feet flat.</li>
+                <li>Arms at your side, palms down.</li>
+                <li>Engage glutes and core tightly.</li>
+                <li>Press through your heels and lift hips.</li>
+                <li>Form a straight line from shoulders to knees.</li>
+                <li>Squeeze glutes at the top.</li>
+                <li>Lower down slowly without touching ground.</li>
+                <li>Keep movement controlled.</li>
+                <li>Avoid arching your lower back.</li>
+                <li>Repeat for 12–15 reps, 2–3 sets.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

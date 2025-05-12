@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nutrients & Lifestyle - HomeFit</title>
+  <link rel="stylesheet" href="GYM.css">
+  <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    .hero {
+      width: 100%;
+      height: 300px;
+      background-image: url('nutrition-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      font-size: 2rem;
+      margin-top: 70px; /* offset for fixed nav */
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 1rem;
+    }
+
+    .nutrients, .lifestyle {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 280px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      color: #c62828;
+      margin-top: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+
+      .hero {
+        height: 200px;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar from index.html -->
+  <nav>
+    <div class="logo">
+      <h1>HomeFit</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="challenges.html">Challenges</a></li>
+      <li><a href="#plan">Plans</a></li>
+      <li><a href="#member">Member</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="nutrients.html" style="color: crimson;">Nutrients</a></li>
+    </ul>
+    <i id="bar" class="fa-solid fa-bars"></i>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    Nourish. Move. Thrive.
+  </div>
+
+  <!-- Nutrient Cards -->
+  <div class="container">
+    <h2>Essential Nutrients</h2>
+    <div class="nutrients">
+      <div class="card">
+        <img src="protein.webp" alt="Protein-rich food">
+        <h3>Protein</h3>
+        <p>Builds muscles, repairs tissues, and supports hormones. Sources include eggs, chicken, tofu, and legumes.</p>
+      </div>
+      <div class="card">
+        <img src="carbs.webp" alt="Healthy carbs">
+        <h3>Carbohydrates</h3>
+        <p>Main energy source for workouts. Choose whole grains, fruits, and vegetables over refined sugar.</p>
+      </div>
+      <div class="card">
+        <img src="fats.webp" alt="Healthy fats">
+        <h3>Fats</h3>
+        <p>Supports brain function and energy. Healthy fats are found in nuts, seeds, olive oil, and avocados.</p>
+      </div>
+      <div class="card">
+        <img src="vitamins.webp" alt="Vitamins">
+        <h3>Vitamins</h3>
+        <p>Boost immunity and energy metabolism. Get them from fruits, veggies, and whole foods.</p>
+      </div>
+      <div class="card">
+        <img src="hydration.webp" alt="Hydration">
+        <h3>Water</h3>
+        <p>Hydration is key for all body functions. Aim for 8+ glasses a day, more if you exercise regularly.</p>
+      </div>
+    </div>
+
+    <!-- Lifestyle Tips -->
+    <h2 style="margin-top: 3rem;">Lifestyle Tips</h2>
+    <div class="lifestyle">
+      <div class="card">
+        <img src="sleep.webp" alt="Sleep hygiene">
+        <h3>Sleep Hygiene</h3>
+        <p>7–9 hours of sleep helps recovery, fat loss, and mental clarity. Set a routine and avoid screens before bed.</p>
+      </div>
+      <div class="card">
+        <img src="stress.webp" alt="Stress management">
+        <h3>Stress Management</h3>
+        <p>Practice meditation, deep breathing, or journaling to manage daily stress for better health and focus.</p>
+      </div>
+      <div class="card">
+        <img src="routine.webp" alt="Healthy routine">
+        <h3>Healthy Routine</h3>
+        <p>Plan meals, exercise regularly, and limit junk food. Consistency over intensity leads to lasting change.</p>
+      </div>
+      <div class="card">
+        <img src="screen-time.webp" alt="Limit screen time">
+        <h3>Screen Time</h3>
+        <p>Reduce excess screen time and stay physically active. Take breaks every hour if sitting long hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional: Include GYM.js if needed -->
+  <!-- <script src="GYM.js"></script> -->
+</body>
+</html>
