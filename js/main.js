@@ -41,21 +41,46 @@ if (cardElements.length > 0) {
 
       const detailPage = document.createElement('div');
       detailPage.className = 'cardDetailOverlay';
-      detailPage.innerHTML = `
-        <div class="cardDetail" role="dialog" aria-modal="true" aria-label="Challenge details">
-          <h1>Challenge Details</h1>
-          <p>Duration: 12 Weeks</p>
-          <img src="${image.src}" alt="Challenge image">
-          <h3>About This Challenge</h3>
-          <p class="dumiText">
-            Build consistency with simple daily workouts and nutrition-focused habits for sustainable fitness progress.
-          </p>
-          <div class="cardDetailActions">
-            <button type="button" class="joinBtn">Join Now</button>
-            <button type="button" class="backBtn">Back</button>
-          </div>
-        </div>
-      `;
+
+      const detailCard = document.createElement('div');
+      detailCard.className = 'cardDetail';
+      detailCard.setAttribute('role', 'dialog');
+      detailCard.setAttribute('aria-modal', 'true');
+      detailCard.setAttribute('aria-label', 'Challenge details');
+
+      const title = document.createElement('h1');
+      title.textContent = 'Challenge Details';
+
+      const duration = document.createElement('p');
+      duration.textContent = 'Duration: 12 Weeks';
+
+      const detailImage = document.createElement('img');
+      detailImage.src = image.src;
+      detailImage.alt = 'Challenge image';
+
+      const aboutTitle = document.createElement('h3');
+      aboutTitle.textContent = 'About This Challenge';
+
+      const aboutText = document.createElement('p');
+      aboutText.className = 'dumiText';
+      aboutText.textContent = 'Build consistency with simple daily workouts and nutrition-focused habits for sustainable fitness progress.';
+
+      const actionWrapper = document.createElement('div');
+      actionWrapper.className = 'cardDetailActions';
+
+      const joinButton = document.createElement('button');
+      joinButton.type = 'button';
+      joinButton.className = 'joinBtn';
+      joinButton.textContent = 'Join Now';
+
+      const backButton = document.createElement('button');
+      backButton.type = 'button';
+      backButton.className = 'backBtn';
+      backButton.textContent = 'Back';
+
+      actionWrapper.append(joinButton, backButton);
+      detailCard.append(title, duration, detailImage, aboutTitle, aboutText, actionWrapper);
+      detailPage.appendChild(detailCard);
 
       detailPage.addEventListener('click', (event) => {
         if (event.target === detailPage) {
