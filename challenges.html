@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>HomeFit Challenges</title>
+    <meta name="description" content="Join HomeFit workout challenges and build healthy habits.">
+    <link rel="stylesheet" href="css/main.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -25,7 +27,8 @@
             color: white;
         }
 
-        .hero video {
+        .hero video,
+        .hero img {
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -153,13 +156,11 @@
     </header>
 
     <div class="hero">
-        <video autoplay muted loop>
-            <source src="workout-video.mp4" type="video/mp4" />
-        </video>
+        <img src="assets/images/hero-lifestyle.jpg" alt="People training in a gym" />
         <div class="hero-text">
             <h1>Take the First Step<br>Transform Your Life</h1>
             <p>Commit to our proven challenges and feel the change in just weeks.</p>
-            <button>Join a Challenge</button>
+            <button type="button">Join a Challenge</button>
         </div>
     </div>
 
@@ -183,21 +184,21 @@
                     <p>Push your limits with progressive strength training. Perfect for beginners and intermediates.</p>
                     <p><strong>Level:</strong> Beginner</p>
                     <p><strong>Duration:</strong> 12 Weeks</p>
-                    <button>Join Now</button>
+                    <button type="button">Join Now</button>
                 </li>
                 <li class="challenge-card">
                     <h3>30-Day Fat Burn Blast</h3>
                     <p>High-intensity workouts to torch calories and sculpt lean muscle.</p>
                     <p><strong>Level:</strong> Intermediate</p>
                     <p><strong>Duration:</strong> 30 Days</p>
-                    <button>Join Now</button>
+                    <button type="button">Join Now</button>
                 </li>
                 <li class="challenge-card">
                     <h3>6-Week Mobility Mastery</h3>
                     <p>Increase flexibility, relieve tension, and move pain-free with guided mobility flows.</p>
                     <p><strong>Level:</strong> All Levels</p>
                     <p><strong>Duration:</strong> 6 Weeks</p>
-                    <button>Join Now</button>
+                    <button type="button">Join Now</button>
                 </li>
             </ul>
         </section>
@@ -304,5 +305,6 @@
     </div>
 </section>
 
+    <script src="js/main.js"></script>
 </body>
 </html>

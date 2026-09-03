@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="GYM.css">
+    <meta name="description" content="HomeFit helps you start your fitness journey with workouts, challenges, and diet guidance.">
+    <title>HomeFit | Fitness and Nutrition</title>
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous">
         
@@ -15,10 +16,11 @@
 </head>
 <body>
     <div class="container">
-        <Header>
+        <header>
             <div class="logo">
                 <h1>HomeFit</h1>
             </div>
+            <nav aria-label="Primary navigation">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="#challenge">Challenges</a></li>
@@ -28,9 +30,10 @@
                 <!-- <li><a href="#contact">Contact</a></li>  -->
                 <li><a href="login.html">Login</a></li> 
                 <li><a href="register.html">Register</a></li>
-                <li><a href="Exersize.html">Exercise</a></li>
-            </ul> 
-        </Header>
+                <li><a href="exercise.html">Exercise</a></li>
+            </ul>
+            </nav>
+        </header>
 
         <div class="main">
             <div class="mainText">
@@ -39,10 +42,10 @@
 In today's fast-paced world, health often takes a backseat to deadlines, routines, and responsibilities. But here's the truth: your body is your greatest asset, and investing in your health is the most rewarding decision you can make.
 
 At HomeFit, we believe that fitness is not a destination—it's a way of life. Whether you're just starting out or you're already on your fitness journey, our platform is designed to support, guide, and motivate you every step of the way. </p>
-                <a href=challenges.html > <button>Challenges</button></a>
-                <a href=register.html> <button>Join Us</button></a>
+                <a href="challenges.html" > <button type="button">Challenges</button></a>
+                <a href="register.html"> <button type="button">Join Us</button></a>
             </div>
-            <img src="man.png" alt="">
+            <img src="assets/images/man.png" alt="Man doing workout">
         </div>
 
         <div id="challenge">
@@ -51,29 +54,29 @@ At HomeFit, we believe that fitness is not a destination—it's a way of life. W
             </div>
             <div class="cards">
                 <div class="crd">
-                    <img src="clg.webp" alt="">
+                    <img src="assets/images/clg.webp" alt="Mobility challenge session">
                     <div class="crdText">
                         <p>Mobility Challenge</p>
                         <p>12 Weeks</p>
-                        <button>Join</button>
+                        <button type="button">Join</button>
                     </div>
                 </div>
                 <div class="crd">
-                    <img src="clg2.jpg" alt="">
+                    <img src="assets/images/clg2.jpg" alt="Strength challenge session">
                     <div class="crdText">
                         <p>Mobility Challenge</p>
                         <p>12 Weeks</p>
-                        <button>Join</button>
+                        <button type="button">Join</button>
 
                         
                     </div>
                 </div>  
                 <div class="crd">
-                    <img src="clg3.jpg" alt="">
+                    <img src="assets/images/clg3.jpg" alt="Cardio challenge session">
                     <div class="crdText">
                         <p>Mobility Challenge</p>
                         <p>12 Weeks</p>
-                        <button>Join</button>
+                        <button type="button">Join</button>
                     </div>
                 </div>
             </div>
@@ -134,27 +137,27 @@ At HomeFit, we believe that fitness is not a destination—it's a way of life. W
             </div>
             <div class="members">
                 <div class="slider">
-                    <img src="s1.jpeg" alt="">
-                    <img src="s2.jpeg" alt="">
-                    <img src="s3.jpg" alt="">
+                    <img src="assets/images/s1.jpeg" alt="Member workout photo">
+                    <img src="assets/images/s2.jpeg" alt="Member workout photo">
+                    <img src="assets/images/s3.jpg" alt="Member workout photo">
                 </div>
                 <div class="slider">
                     
-                   <img src="s4.jpg" alt="">
-                   <img src="s5.jpg" alt="">
-                   <img src="s6.jpg" alt="">
+                   <img src="assets/images/s4.jpg" alt="Member workout photo">
+                   <img src="assets/images/s5.jpg" alt="Member workout photo">
+                   <img src="assets/images/s6.jpg" alt="Member workout photo">
                 </div>
                 <div class="slider">
                     
-                   <img src="s7.jpg" alt="">
-                   <img src="s11.jpg" alt="">
-                   <img src="s6.jpg" alt="">
+                   <img src="assets/images/s7.jpg" alt="Member workout photo">
+                   <img src="assets/images/s11.jpg" alt="Member workout photo">
+                   <img src="assets/images/s6.jpg" alt="Member workout photo">
                 </div>
                 <div class="slider">
                     
-                    <img src="s8.jpeg" alt="">
-                    <img src="s9.jpg" alt="">
-                    <img src="s10.jpg" alt="">
+                    <img src="assets/images/s8.jpeg" alt="Member workout photo">
+                    <img src="assets/images/s9.jpg" alt="Member workout photo">
+                    <img src="assets/images/s10.jpg" alt="Member workout photo">
                  </div>
 
             </div>
@@ -177,27 +180,27 @@ At HomeFit, we believe that fitness is not a destination—it's a way of life. W
   <h2 class="section-title">Our Diet Plans</h2>
   <div class="cards">
     <div class="card">
-      <img src= weight-loss.webp alt="Weight Loss Diet">
+      <img src="assets/images/weight-loss.webp" alt="Weight Loss Diet">
       <div class="card-text">
         <h3>Weight Loss Diet</h3>
         <p>High protein & low calorie meals for fat loss.</p>
-        <a href="diet.html"><button>View Details</button></a>
+        <a href="diet.html"><button type="button">View Details</button></a>
       </div>
     </div>
     <div class="card">
-      <img src= muscles-gain.jpg alt="Muscle Gain Diet">
+      <img src="assets/images/muscles-gain.jpg" alt="Muscle Gain Diet">
       <div class="card-text">
         <h3>Muscle Gain Diet</h3>
         <p>Balanced macros and high-calorie meals to build muscle.</p>
-        <a href="diet.html"><button>View Details</button></a>
+        <a href="diet.html"><button type="button">View Details</button></a>
       </div>
     </div>
     <div class="card">
-      <img src= vegan.webp alt="Vegan Diet">
+      <img src="assets/images/vegan.jpg" alt="Vegan Diet">
       <div class="card-text">
         <h3>Vegan Diet</h3>
         <p>Nutrient-rich plant-based meals for fitness lovers.</p>
-        <a href="diet.html"><button>View Details</button></a>
+        <a href="diet.html"><button type="button">View Details</button></a>
       </div>
     </div>
   </div>
@@ -238,10 +241,6 @@ At HomeFit, we believe that fitness is not a destination—it's a way of life. W
             </div>
         </footer>
     </div>
-    <script src="GYM.js">
-        <style>
-
-</style>
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

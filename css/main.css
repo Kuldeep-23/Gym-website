@@ -340,3 +340,34 @@ footer{
         margin-inline: 2px;
     }
 }
+.cardDetailOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 200;
+}
+
+.cardDetail {
+    background: #fff;
+    width: min(760px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cardDetailActions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.cardDetailActions .backBtn,
+.cardDetailActions .joinBtn {
+    margin-top: 0;
+}
